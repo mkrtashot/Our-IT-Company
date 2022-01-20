@@ -91,17 +91,17 @@ body {
     background-color: white;
     border-radius: 50%;
     z-index: 1;
-    left: 0;
+    right: 0;
 }
 
 .light-dark-switch-scroll-click {
     position: absolute;
     width: 38px;
     height: 38px;
-    background-color: white;
+    background-color: black;
     border-radius: 50%;
     z-index: 1;
-    right: 0;
+    right: 50%;
 }
 
 .light-dark-switch-sun {
@@ -110,9 +110,18 @@ body {
     height: 22px;
 }
 
+.light-dark-switch-sun svg {
+    fill:white;
+}
+
 .light-dark-switch-moon {
+    z-index: 2;
     width: 24px;
     height: 24px;
+}
+
+.light-dark-switch-moon svg {
+    fill:black;
 }
 
 #settings-wheel {
