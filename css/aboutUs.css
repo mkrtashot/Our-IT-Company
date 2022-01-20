@@ -171,11 +171,12 @@ body {
 }
 .abous_us_content {
   background-color: black;
-  height: 1150px;
+  height: 100vh;
 }
 .about_us_container {
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
 }
 .about_us_block form {
   display: flex;
@@ -201,7 +202,7 @@ body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 44px;
   letter-spacing: 0.04em;
 
@@ -235,15 +236,17 @@ body {
   position: relative;
   font-size: 25px;
   margin-left: 5px;
+  width: 45px;
+  height: 15px;
 }
 
 .about_us_block button::before {
-  content: url(../img/click2.png);
+  content: url(../pictures/click2.png);
   position: absolute;
-  left: 60px;
+  left: 67px;
   height: 4px;
   width: 3px;
-  top: 5px;
+  top: 4px;
 }
 .about_us_block button:hover {
   color: aqua;
@@ -323,13 +326,26 @@ body {
 
 .nav_block > ul {
   display: flex;
+  justify-content: space-between;
+}
+.logo_block > h3 {
+  font-family: Syncopate;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+  color: #eeeeee;
+}
+.nav_block {
+  width: 40%;
 }
 .nav_block > ul > li > a {
-  padding: 0 25px;
+  /* padding: 0 20px; */
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 22px;
   color: #eeeeee;
 }
@@ -340,11 +356,27 @@ body {
 }
 .social_block a {
   padding: 0 25px;
+  width: 100%;
 }
 
-/* .fac_block {
-  margin: 0 25px;
+.nav_block > ul > li {
+  position: relative;
 }
-.insta_block {
-  margin-right: 25px;
-} */
+
+.nav_block > ul > li > a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -10px;
+  left: 0px;
+  /* right: 50px; */
+  background-color: #eeeeee;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+.nav_block > ul > li > a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
