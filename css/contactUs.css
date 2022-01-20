@@ -372,11 +372,11 @@ body {
   bottom: -10px;
   left: 0px;
   /* right: 50px; */
-  background-color: #eeeeee;
-  transform-origin: bottom right;
+  background-color: #F5F5F5;
+  transform-origin: center;
   transition: transform 0.5s ease-out;
 }
 .nav_block > ul > li > a:hover:after {
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: center;
 }
