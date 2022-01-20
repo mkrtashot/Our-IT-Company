@@ -171,6 +171,10 @@ body {
     margin-top:70px
 }
 
+/* ABOUT US */
 
+.about-us-container{
+    max-height: 100vh;
+}
 
 
