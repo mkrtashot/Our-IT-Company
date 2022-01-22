@@ -9,7 +9,7 @@ ul {
 }
 
 img {
-    max-width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -23,11 +23,30 @@ svg {
 }
 
 body {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', serif;
     background-color: rgb(0, 0, 0);
-    width: 100vw;
     max-width: 1920px;
     height: 2000px;
+    z-index: -1;
 }
+
+section {
+    padding: 0 100px;
+    background-color: rgba(0,0,0,.75);
+}
+
+h3 {
+    color: antiquewhite;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
 
 /* CONTENT */
 
@@ -35,48 +54,55 @@ body {
 
 .nav-bar {
     position: fixed;
-    top: 0;
+    top: 20px;
     width: 100%;
     max-width: 1720px;
-    height: 100px;
+    height: 70px;
     padding: 0 100px;
-    justify-content: center;
+    background-color: rgba(19, 18, 18, 0.849);
 }
 
-.nav-list{
+.nav-list {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid 2px rgb(33, 33, 33);}
+}
 
 .nav-bar-items {
     font-family: 'Montserrat', serif;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 2px;
-    color: #EEEEEE;
+    color: antiquewhite;
 }
 
-.nav-bar-logo-text{
-    font-family: 'Syncopate', sans-serif;;
+.nav-bar-logo-text {
+    font-family: 'Syncopate', sans-serif;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.nav-bar-logo-text p:first-child {
+    text-transform: lowercase;
+    font-size: 125%;
+    color: blueviolet;
+        
 }
 
 #light-dark-switch {
     position: relative;
     width: 76px;
     height: 38px;
-    border: solid 0.2px white;
+    border: solid 0.2px antiquewhite;
     border-radius: 19px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-   }
+}
 
 .settings-wheel {
     width: 24px;
@@ -88,7 +114,7 @@ body {
     position: absolute;
     width: 38px;
     height: 38px;
-    background-color: white;
+    background-color: antiquewhite;
     border-radius: 50%;
     z-index: 1;
     right: 0;
@@ -111,7 +137,7 @@ body {
 }
 
 .light-dark-switch-sun svg {
-    fill:white;
+    fill: antiquewhite;
 }
 
 .light-dark-switch-moon {
@@ -121,7 +147,7 @@ body {
 }
 
 .light-dark-switch-moon svg {
-    fill:black;
+    fill: black;
 }
 
 #settings-wheel {
@@ -132,22 +158,25 @@ body {
 /* HOME PAGE */
 
 .home-page-container {
-    height: 100vh;
+    position: relative;
+    height: 85vh;
+    max-height: 1209px;
     padding: 0 100px;
+    margin-bottom: 70px;
 }
 
 .home-content {
     margin-top: 200px;
+    height: auto;
     width: 100%;
-    height: 100%;
-    border-bottom: solid 2px rgb(33, 33, 33);
+    border-bottom: solid 1px blueviolet;
 }
 
 .home-content-textline-container {
     width: 100%;
     height: 75px;
     display: flex;
-    color: #ffffff;
+    color: antiquewhite;
     justify-content: space-around;
     margin: auto;
 }
@@ -158,23 +187,84 @@ body {
 }
 
 .home-content-textline-empty {
-    -webkit-text-stroke-width: .3px;
-  -webkit-text-stroke-color: white;
-    color: rgba(0,0,0,0);
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: antiquewhite;
+    color: rgba(0, 0, 0, 0);
 }
 
 .home-content-image-container {
     background-image: url(../pictures/home-page-image.png);
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     max-height: 425px;
-    margin-top:70px
+    margin-top: 70px
 }
 
 /* ABOUT US */
 
-.about-us-container{
-    max-height: 100vh;
+.about-us-container {
+    height: 100%;
+    margin-top: 70px
 }
 
+/* .about-us-team-text {
+    
+} */
+
+.about-us-team-text-underline {
+    background-color: blueviolet;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0 60px 0;
+}
+
+.about-us-team-member-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    min-height: 1209px;
+    color: antiquewhite;
+    justify-content: space-between;
+}
+
+.about-us-team-members-container {
+    width: 30%;
+}
+
+.about-us-team-members-container:last-child{
+    margin-top: 50px;
+}
+
+.about-us-team-member-name {
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.about-us-team-member-name p::first-letter {
+    color:blueviolet;
+    font-size: 200%;
+}
+
+.about-us-team-member-image {
+    width: 100%;
+    height: outo;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.about-us-team-member-contacts p {
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+    font-weight: 100;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.about-us-team-member-contacts > p::first-letter{
+    font-size: 200%;
+}
 
