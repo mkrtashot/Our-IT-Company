@@ -1,3 +1,30 @@
+// homePage sparkling animation //
+
+const app = document.getElementById("sparkle");
+
+const myRand = () => {
+	let r = 50;
+	while (40 < r && r < 60) {
+		r = Math.random() * 100;
+	}
+	return r;
+};
+
+for (let i = 0; i < 50; i++) {
+	const delay = Math.random() + "s";
+	const el = document.createElement("img");
+	el.src = "../pictures/sparkle-effect-white-square.jpg";
+	el.className = "glitter-star";
+	el.style.top = myRand() + "%";
+	el.style.left = myRand() + "%";
+	el.style.animationDelay = delay;
+	el.style.msAnimationDelay = delay;
+	el.style.webkitAnimationDelay = delay;
+	el.style.monAnimationDelay = delay;
+	app.appendChild(el);
+}
+
+
 // clients - Subtitle click effect //
 
 const corporate = document.querySelector('.corporate');
@@ -34,7 +61,9 @@ function subsectionOnClick() {
   }
 
   if (checkCorporate === true && this === corporate) {
-    clientInfo1.style.display = 'flex';
+    clientInfo1.style.visibility = 'visible';
+    clientInfo1.style.opacity = '1';
+    current_tab_index=0;
     buttonApear();
   }
 
@@ -50,3 +79,38 @@ function buttonApear() {
     clientButtons.style.visibility = 'visible';
   }
 }
+function hideContainer(){
+  const hide =  document.querySelector(`.container${current_tab_index+1}`)
+  hide.style.visibility = 'hidden';
+  hide.style.opacity = '0';
+}
+function showContainer(){
+  const show =  document.querySelector(`.container${current_tab_index+1}`)
+
+  show.style.visibility = 'visible';
+  show.style.opacity = '1';
+}
+document.querySelector('.clients-page-content-button-up').addEventListener("click",function(){
+  hideContainer()
+  current_tab_index = current_tab_index-1>=0?current_tab_index-1:2;
+  showContainer()
+})
+
+document.querySelector('.clients-page-content-button-down').addEventListener("click",function(){
+  hideContainer()
+  current_tab_index = current_tab_index+1<=2?current_tab_index+1:0;
+  showContainer()
+
+})
+// text invert to span //
+let current_tab_index=0;
+
+let clientsTextArray = [];
+
+function textSpanFinal() {
+  const clientsText = document.querySelectorAll(".meji-text");
+  for (let i = 0; i<clientsText.length; i++){   
+    clientsText[i].innerHTML=clientsText[i].innerHTML.split(" ").map(e=>`<span>${e}</span>`).join(' ')     
+   }
+}
+textSpanFinal()
