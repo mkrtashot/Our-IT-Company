@@ -296,64 +296,59 @@ svg {
 }
 
 @media screen and (max-width: 1280px) {
-  
-    .main .services .services_items .service_item .service_items_text p {
-      font-size: 15px;
-    }
-    .main .services .services_items .service_item .service_items_text a {
-      padding: 5px 12px;
-    }
+  .main .services .services_items .service_item .service_items_text p {
+    font-size: 15px;
   }
-  
-  @media screen and (max-width: 1140px) {
-  
-    .main .services .services_items .service_item .service_items_text p {
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-    .main .services .services_items .service_item .service_items_text a {
-      padding: 5px 12px;
-    }
+  .main .services .services_items .service_item .service_items_text a {
+    padding: 5px 12px;
   }
-  
-  @media screen and (max-width: 520px) {
-    
-    .main .services .services_items .service_item .service_items_text p {
-      font-size: 15px;
-    }
-    .main .services .services_items .service_item .service_items_text a {
-      padding: 5px 12px;
-    }
-  }
-  
-  @media screen and (max-width: 420px) {
-  
-    .main .services .services_items .service_item .service_items_text p {
-      font-size: 13px;
-    }
-    .main .services .services_items .service_item .service_items_text a {
-      padding: 4px 8px;
-    }
-  } 
+}
 
-   
-  @media screen and (max-width: 1024px) {
-    .main .services .services_items .service_item {
-      flex-basis: calc(100% / 3 - 15px);
-    }
-  
-  @media screen and (max-width: 768px) {
-    .main .services .services_items .service_item {
-      flex-basis: calc(100% / 2 - 15px);
-      max-height: 300px;
-    }
+@media screen and (max-width: 1140px) {
+  .main .services .services_items .service_item .service_items_text p {
+    font-size: 14px;
+    margin-bottom: 8px;
   }
-  
-  @media screen and (max-width: 580px) {
-    .main .services .services_items .service_item {
-      flex-basis: calc(100% / 1);
-      max-height: unset;
-    }
-  }  
+  .main .services .services_items .service_item .service_items_text a {
+    padding: 5px 12px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .main .services .services_items .service_item .service_items_text p {
+    font-size: 15px;
+  }
+  .main .services .services_items .service_item .service_items_text a {
+    padding: 5px 12px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main .services .services_items .service_item .service_items_text p {
+    font-size: 13px;
+  }
+  .main .services .services_items .service_item .service_items_text a {
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main .services .services_items .service_item {
+    flex-basis: calc(100% / 3 - 15px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .services .services_items .service_item {
+    flex-basis: calc(100% / 2 - 15px);
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .main .services .services_items .service_item {
+    flex-basis: calc(100% / 1);
+    max-height: unset;
+  }
+}
 
 /* service end */
