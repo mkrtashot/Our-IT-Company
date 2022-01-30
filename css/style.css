@@ -25,7 +25,7 @@ svg {
 body {
   position: relative;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Montserrat', serif;
   background-color: rgb(0, 0, 0);
   z-index: -1;
@@ -101,6 +101,25 @@ h3 {
   color: blueviolet;
 }
 
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: #f5f5f5;
+  transform-origin: center;
+  transition: transform 0.5s ease-out;
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+  /* filter: brightness(200%); */
+}
+
 
 /* HOME PAGE */
 
@@ -137,6 +156,15 @@ h3 {
   text-transform: capitalize;
   letter-spacing: 4px;
   word-spacing: 6px;
+}
+
+#sparkle {
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  top: 2%;
+  left: 2%;
+
 }
 
 .home-page-text-container p span:hover {
@@ -331,27 +359,6 @@ img.glitter-star {
   }
 }
 
-
-.underline:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: -10px;
-  left: 0;
-  background-color: #f5f5f5;
-  transform-origin: center;
-  transition: transform 0.5s ease-out;
-}
-
-
-
-.underline:hover:after {
-  transform: scaleX(1);
-  transform-origin: center;
-  /* filter: brightness(200%); */
-}
 
 /* <<<<<<< feature/Home-Page */
 
