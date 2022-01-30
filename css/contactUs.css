@@ -5,29 +5,23 @@
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
-
-body {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	list-style-position: inside;
+	outline: none !important;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	font-family: "Montserrat", serif;
+	user-select: none;
 }
 
 ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-}
-
-* {
-	outline: none !important;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
 }
 
 a {
@@ -39,35 +33,10 @@ button {
 	cursor: pointer;
 }
 
-input,
-button,
-select {
-	display: inline-block;
-	padding: 0;
-	border: 0;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: "Montserrat", serif;
-}
-* {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	outline: 0;
-	list-style-position: inside;
-}
 
 .container {
 	max-width: 1280px;
+	height: 100vh;
 	margin: 0 auto;
 	padding: 10px;
 }
@@ -191,6 +160,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
+	
 }
 .our_email {
 	margin: 25px 0;
@@ -200,9 +170,18 @@ body {
 	width: 2px;
 	height: 250px;
 	background-color: #212121;
+	
 }
 .our_phone {
 	margin-bottom: 35px;
+}
+
+.our_email p:last-child {
+	user-select:text;
+}
+
+.our_phone p:last-child{
+	user-select: text;
 }
 
 .end_line {
@@ -216,6 +195,7 @@ body {
 .end_nav_block {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin: 45px 0;
 }
 .logo_block {
