@@ -118,7 +118,6 @@
   .underline:hover:after {
     transform: scaleX(1);
     transform-origin: center;
-    /* filter: brightness(200%); */
   }
 
 /* CLIENTS PAGE */
@@ -148,10 +147,12 @@
     display: inline-block;
     line-height: 50px;
     filter: brightness(80%);
+    transition: ease-in-out 0.5s;
 }
 
 .clients-page-title:hover {
-    filter: brightness(400%);
+    filter: brightness(200%);
+    filter: drop-shadow(0 0 20px silver);
 }
 
 .clients-page-title-underline {
@@ -198,8 +199,7 @@
 
 .clients-subsection-default svg path:hover {
     filter: brightness(800%);
-    filter: drop-shadow(5px 5px 10px silver);
-}
+    filter: drop-shadow(0 0 20px silver);}
 
 .clients-subsections-titles {
 
@@ -217,10 +217,9 @@
 }
 
 .clients-subsections-titles div:hover {
-    filter: brightness(400%);
+    filter: brightness(200%);
     letter-spacing: 3px;
-    filter: drop-shadow(15px 15px 15px silver);
-}
+    filter: drop-shadow(0 0 20px silver);}
 
 .clients-subsections-titles p::first-letter {
     font-size: 200%;
@@ -298,16 +297,16 @@
 }
 
 .scroll-button:hover {
-    filter: contrast(150%) brightness(400%) saturate(4);
+    filter: contrast(150%) brightness(200%) saturate(4);
 }
 
 .corporate.clients-subsections-titles-click {
-    filter: brightness(400%);
+    filter: brightness(200%);
     letter-spacing: 3px;
 }
 
 .folk.clients-subsections-titles-click {
-    filter: brightness(400%);
+    filter: brightness(200%);
     letter-spacing: 3px;
 }
 
@@ -326,9 +325,8 @@
 }
 
 .clients-logo-containter svg path:hover {
-    filter: brightness(800%);
-    filter: drop-shadow(15px 15px 15px silver);
-    /* filter: drop-shadow(16px 16px 20px silver); */
+    filter: brightness(200%);
+    filter: drop-shadow(0 0 30px silver);    /* filter: drop-shadow(16px 16px 20px silver); */
 }
 
 .subsection-container-vertical-line {
@@ -340,7 +338,7 @@
 }
 
 .clients-logo-containter svg:hover~.subsection-container-vertical-line {
-    filter: brightness(500%);
+    filter: brightness(200%);
 }
 
 .subsection-container-text {
@@ -357,8 +355,7 @@
 
 .meji-text span:hover {
     filter: brightness(200%);
-    filter: drop-shadow(15px 15px 15px silver);
-}
+    filter: drop-shadow(0 0 20px silver);}
 
 /* FOLKS SUBSECTION */
 
@@ -383,7 +380,6 @@
     visibility: hidden;
     opacity: 0;
     color: silver;
-    /* z-index: 500; */
 }
 
 .folks-image{
