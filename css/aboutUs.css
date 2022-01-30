@@ -120,6 +120,12 @@ h3 {
 	text-align: center;
 }
 
+.about-us-team-member-image {
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+}
+
 .about-us-team-member-contacts p {
 	font-family: "Montserrat", serif;
 	font-size: 16px;

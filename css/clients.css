@@ -248,7 +248,7 @@ h3 {
 
 .clients-subsection-default svg path:hover {
     filter: brightness(800%);
-    filter: drop-shadow(5px 5px 10px silver);
+    filter: drop-shadow(px 5px 10px silver);
 }
 
 .clients-subsections-titles {
