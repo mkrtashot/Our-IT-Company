@@ -178,7 +178,7 @@ h3 {
     position: relative;
     width: 100%;
     padding-top: 150px;
-    height: 1000px;
+    height: 100vh;
     background-image: url('../pictures/clients-background.png');
 }
 
@@ -237,6 +237,7 @@ h3 {
     width: 70%;
     margin-left: 10%;
     left: 250px;
+    transition: ease-in-out 0.5s;
 }
 
 .clients-subsection-default svg path {
@@ -247,7 +248,7 @@ h3 {
 
 .clients-subsection-default svg path:hover {
     filter: brightness(800%);
-    filter: drop-shadow(15px 15px 15px silver);
+    filter: drop-shadow(5px 5px 10px silver);
 }
 
 .clients-subsections-titles {
@@ -413,6 +414,7 @@ h3 {
 
 .clients-folks-page {
     display: flex;
+    max-height: 200px;
     flex-direction: column;
     position: absolute;
     width: calc(100% - 200px);
@@ -424,11 +426,14 @@ h3 {
 
 .folks-1,
 .folks-2,
-.folks-3
-{
+.folks-3 {
+    position: absolute;
+    top: 50px;
     text-align: center;
     visibility: hidden;
     opacity: 0;
+    color: silver;
+    /* z-index: 500; */
 }
 
 .folks-image{
@@ -439,21 +444,25 @@ h3 {
 }
 
 .folks-image img {
+    height: 270px;
+    width: auto;
+    margin: 0 auto;
     border-radius: 5px;
 }
 
 .folks-opinion {
     height: 88;
+    margin-top: 30px;
 }
 
 .folks-opinion p{
-    font-size: 60px;
+    font-size: 35px;
     font-family: 'Montserrat', serif;
     margin-bottom: 40px;
 }
 
 .folks-name{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Syncopate', serif;
     letter-spacing: 4px;
@@ -463,14 +472,18 @@ h3 {
 }
 
 .folks-position{
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .folks-buttons {
     display: flex;
-    width: 80%;
-    margin-left: 10%;
+    margin-top: 200px;
+    width: 50%;
     justify-content: space-between;
+    bottom: 10px;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
 }
 
 .folks-button-left {
