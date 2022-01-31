@@ -13,7 +13,7 @@ const myRand = () => {
 for (let i = 0; i < 50; i++) {
 	const delay = Math.random() + "s";
 	const el = document.createElement("img");
-	el.src = "pictures/sparkle-effect-white-square.jpg";
+	el.src = "./pictures/sparkle-effect-white-square.jpg";
 	el.className = "glitter-star";
 	el.style.top = myRand() + "%";
 	el.style.left = myRand() + "%";
